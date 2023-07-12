@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" type="image/png" href="img/ico-web.png">
+    <title>Floríster</title>
+</head>
+<body>
+
+<div class="preheader" id="preheader"></div>
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+        <h2>Ingresa tu nombre y apellido</h2>
+        <label for="nameInput"></label><input type="text" id="nameInput" class="btnstyle" placeholder="Nombre" required>
+        <label for="surnameInput"></label><input type="text" id="surnameInput" class="btnstyle" placeholder="Apellido">
+        <button id="submitBtn" class="btnstyle">Guardar</button>
+    </div>
+</div>
+
+<header>
+    <nav  class="entrada">
+        <ul>
+            <li><img src="img/logo-web.png" alt="Inicio" class="logo"></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li class="margin-carrito">
+                <a href="#" id="carritoLink">
+                    <img src="img/carrito-compra-img.png" class="carrito" alt="Carrito">
+                    Carrito (<span id="cantidadCarrito">0</span>)
+                </a>
+                <button id="clearCartBtn" class="btnstyle" onclick="clearCart()">Limpiar carrito</button>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section>
+    <div class="categorias">
+        <h1 class="h1">Categorias de este mes</h1>
+        <p>
+            Aqui podras visualizar las ofertas actuales de este mes.
+        </p>
+    </div>
+</section>
+
+<div class="products-list" id="products-list">
+
+</div>
+
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModalCart()">&times;</span>
+        <h1>Carrito:</h1>
+        <p id="cartContent"></p>
+        <p id="cartTotal"></p>
+        <a href="https://www.paypal.com/" class="pago">Pagar con PayPal</a>
+    </div>
+</div>
+
+<footer class="contenedor">
+    <p>Joan Guasch Duran, Comision 43115 <a href="https://coderhouse.com/">Coderhouse</a></p>
+</footer>
+
+<script src="js/products.js"></script>
+<script src="js/user.js"></script>
+</body>
+</html>
+

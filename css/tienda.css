@@ -1,0 +1,31 @@
+.products-list {
+    max-width: 800px;
+    text-align: center;
+    margin: 100px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product {
+    padding: 20px;
+    margin: 0 30px;
+}
+
+.product img {
+    border-radius: 50%;
+    max-width: 250px;
+    border: 1px solid black;
+}
+
+.btnstyle {
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(30, 139, 235, 0.2);
+}
+
+.btnstyle:hover {
+    color: rgb(119, 121, 14);
+    cursor: pointer;
+}

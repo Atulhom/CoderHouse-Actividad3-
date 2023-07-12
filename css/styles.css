@@ -1,0 +1,51 @@
+@import 'header.css';
+@import 'preheader.css';
+@import 'tienda.css';
+@import 'ventana-carrito.css';
+@import 'entrada.css';
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body, ul, li, p, a, label, input, div, section, footer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.categorias{
+  background-color: #171934e1;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 5px;
+  color: white;
+}
+
+.contenedor {
+  background-color: #171934e1;
+  padding: 10px;
+  text-align: center;
+}
+
+
+.contenedor p {
+  padding: 10px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+a {
+  text-decoration: none; /* Elimina la subrayado del enlace */
+  color: inherit; /* Hereda el color del texto del contenedor padre */
+}
+
+a:hover {
+  color: #69bb7e;
+}
+  
+
